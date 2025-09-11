@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cybersecurity Portfolio — Mohamed Ragab Rashad</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-slate-950 text-slate-100">
+
     <!-- Navbar -->
     <header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -25,14 +28,18 @@
         </div>
     </header>
 
-    <!-- Cover / Hero -->
+    <!-- Hero -->
     <section id="cover" class="relative">
         <div class="absolute inset-0 bg-gradient-to-br from-sky-900/40 to-indigo-900/20"></div>
-        <div class="max-w-6xl mx-auto px-4 py-20 relative">
-            <h1 class="text-4xl md:text-5xl font-bold leading-tight">Web Pentester</h1>
-            <p class="mt-4 text-slate-300 max-w-2xl text-lg">I help startups protect their websites by identifying and
-                fixing vulnerabilities through professional penetration testing.</p>
-            <div class="mt-8 flex flex-wrap gap-3">
+        <div class="max-w-6xl mx-auto px-4 py-24 relative text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
+                <span id="typed"></span>
+            </h1>
+            <p class="mt-4 text-slate-300 max-w-2xl mx-auto text-lg">
+                I help startups protect their websites by identifying and fixing vulnerabilities through professional
+                penetration testing.
+            </p>
+            <div class="mt-8 flex justify-center gap-3">
                 <a href="#projects"
                     class="px-5 py-3 rounded-2xl bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold">View
                     Projects</a>
@@ -41,35 +48,39 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="about" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
         <h2 class="text-2xl font-bold text-sky-400">About Me</h2>
         <div class="mt-6 grid md:grid-cols-3 gap-6">
             <div class="md:col-span-2 bg-slate-900/40 rounded-2xl p-6 border border-slate-800">
-                <p class="leading-7">I am a student at the Faculty of Computers and Information, Helwan National
+                <p class="leading-7">
+                    I am a student at the Faculty of Computers and Information, Helwan National
                     University (Robotics Department), and a participant in the Digital Egypt Pioneers Initiative
-                    (Infrastructure and Security track) as a Vulnerability Analyst and Penetration Tester. I am
-                    passionate about cybersecurity with a strong focus on offensive security. My goal is to establish my
-                    own company and deliver advanced security solutions, while currently seeking opportunities to gain
-                    practical experience and grow my expertise.</p>
-                <p class="mt-4 leading-7 italic text-sky-300">Unique Value: Helping startups launch and grow securely by
-                    identifying and fixing vulnerabilities through professional penetration testing.</p>
+                    (Infrastructure and Security track) as a Vulnerability Analyst and Penetration Tester.
+                    I am passionate about cybersecurity with a strong focus on offensive security.
+                    My goal is to establish my own company and deliver advanced security solutions, while currently
+                    seeking opportunities to gain practical experience and grow my expertise.
+                </p>
+                <p class="mt-4 leading-7 italic text-sky-300">
+                    Unique Value: Helping startups launch and grow securely by identifying and fixing vulnerabilities
+                    through professional penetration testing.
+                </p>
             </div>
             <aside class="bg-slate-900/40 rounded-2xl p-6 border border-slate-800">
                 <ul class="text-sm space-y-2">
                     <li><span class="text-slate-400">Location:</span> Cairo, Egypt</li>
-                    <li><span class="text-slate-400">Email:</span> <a href="mailto:muhammed.ragab.rashad@gamil.com"
-                            class="text-sky-400">muhammed.ragab.rashad@gamil.com</a></li>
-                    <li><span class="text-slate-400">LinkedIn:</span> <a href="https://www.linkedin.com/in/muhamedragab"
-                            class="text-sky-400" target="_blank">linkedin.com/in/muhamedragab</a></li>
+                    <li><span class="text-slate-400">Email:</span> <a href="mailto:muhammed.ragab.rashad@gmail.com"
+                            class="text-sky-400">muhammed.ragab.rashad@gmail.com</a></li>
+                    <li><span class="text-slate-400">LinkedIn:</span> <a href="http://www.linkedin.com/in/muhamedragab"
+                            target="_blank" class="text-sky-400">linkedin.com/in/muhamedragab</a></li>
                     <li><span class="text-slate-400">GitHub:</span> <a href="https://github.com/MuhamedRagabbb"
-                            class="text-sky-400" target="_blank">github.com/MuhamedRagabbb</a></li>
+                            target="_blank" class="text-sky-400">github.com/MuhamedRagabbb</a></li>
                 </ul>
             </aside>
         </div>
     </section>
 
     <!-- Education -->
-    <section id="education" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="education" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
         <h2 class="text-2xl font-bold text-sky-400 mb-8">Education</h2>
         <div class="relative border-l-2 border-sky-500 pl-8 space-y-10">
             <div class="relative">
@@ -97,7 +108,7 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="skills" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
         <h2 class="text-2xl font-bold text-sky-400 mb-8">Skills</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div class="bg-slate-900/40 p-4 rounded-xl border border-slate-800 text-center">
@@ -164,7 +175,7 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="experience" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
         <h2 class="text-2xl font-bold text-sky-400">Experience</h2>
         <div class="mt-6 space-y-6">
             <div class="bg-slate-900/40 rounded-2xl p-6 border border-slate-800">
@@ -181,32 +192,117 @@
         </div>
     </section>
 
+    <!-- Services -->
+    <section id="services" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-sky-400 mb-8">Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+                <h3 class="font-semibold text-lg">Penetration Testing (Web & Network)</h3>
+                <p class="mt-2 text-slate-300 text-sm">Professional penetration testing for web and network environments
+                    to identify security gaps and provide actionable solutions.</p>
+            </div>
+            <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+                <h3 class="font-semibold text-lg">Vulnerability Assessment</h3>
+                <p class="mt-2 text-slate-300 text-sm">Systematic vulnerability scanning, analysis, and reporting to
+                    enhance security posture and reduce potential risks.</p>
+            </div>
+            <div class="bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
+                <h3 class="font-semibold text-lg">Networking & System Security</h3>
+                <p class="mt-2 text-slate-300 text-sm">Designing, configuring, and securing network infrastructures and
+                    systems for reliable and safe communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-sky-400 mb-8">Projects</h2>
+        <div class="grid lg:grid-cols-1 gap-6">
+            <div
+                class="bg-slate-900/40 rounded-2xl p-10 border border-slate-800 flex flex-col justify-between shadow-lg">
+                <div>
+                    <h3 class="font-semibold text-2xl">Building a Scalable Network: VLANs, IP Addressing & Routing</h3>
+                    <p class="mt-4 text-slate-300 leading-relaxed">
+                        In today's digital world, efficient networking is the backbone of any organization.
+                        As part of my academic journey at Helwan National University, I worked on designing
+                        a <span class="text-sky-400 font-medium">multi-building network infrastructure</span> using
+                        Cisco Packet Tracer,
+                        diving deep into real-world networking principles.
+                    </p>
+
+                    <h4 class="mt-6 font-semibold text-sky-300">Project Highlights:</h4>
+                    <ul class="list-disc list-inside text-slate-300 mt-3 space-y-2">
+                        <li>Each router represents a separate building, ensuring structured communication.</li>
+                        <li>🔹 VLANs for better security and traffic management.</li>
+                        <li>🔹 Routing Protocols (Static & Dynamic) for optimized data flow.</li>
+                        <li>🔹 Custom switch configurations for enhanced performance.</li>
+                        <li>🔹 IP Addressing & Subnetting for efficient network communication and resource allocation.
+                        </li>
+                    </ul>
+
+                    <p class="mt-6 text-slate-300 leading-relaxed italic">
+                        This project was more than just an assignment—it was an opportunity to explore networking in
+                        action,
+                        applying concepts beyond theory to see how real infrastructures take shape.
+                    </p>
+
+                    <p class="mt-4 text-slate-400 text-sm">Tools: Cisco Packet Tracer</p>
+                </div>
+
+                <div class="mt-8 flex gap-4">
+                    <a href="https://drive.google.com/file/d/1h_XGYxhlTwmvO1-F5T8dxsrbfzFwIvWS/view" target="_blank"
+                        class="px-5 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold text-sm">
+                        View Documentation
+                    </a>
+                    <a href="https://drive.google.com/file/d/1whkP4hD3XfQJa7oiw3beCyXBqlrGpvwP/view" target="_blank"
+                        class="px-5 py-3 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-slate-900 font-semibold text-sm">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Contact -->
-    <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-2xl font-bold text-sky-400">Contact</h2>
-        <p class="mt-2 text-slate-300">Reach out to discuss how I can help secure your startup.</p>
-        <form class="mt-6 grid md:grid-cols-2 gap-4 bg-slate-900/40 p-6 rounded-2xl border border-slate-800">
-            <input class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800" placeholder="Your Name" />
-            <input class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800" placeholder="Email" />
-            <textarea class="px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 md:col-span-2" rows="5"
-                placeholder="Message"></textarea>
-            <button type="submit"
-                class="px-5 py-3 rounded-2xl bg-sky-500 hover:bg-sky-400 text-slate-900 font-semibold md:w-max">Hire
-                Me</button>
-        </form>
-        <p class="mt-4 text-sm text-slate-400">Or email me directly: <a href="mailto:muhammed.ragab.rashad@gamil.com"
-                class="text-sky-400 underline">muhammed.ragab.rashad@gamil.com</a></p>
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-20" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-sky-400 mb-8">Contact</h2>
+        <div class="bg-slate-900/40 rounded-2xl p-6 border border-slate-800 max-w-xl">
+            <ul class="space-y-3">
+                <li><span class="text-slate-400">Email:</span><a href="mailto:muhammed.ragab.rashad@gmail.com"
+                        class="text-sky-400 ml-2">muhammed.ragab.rashad@gmail.com</a></li>
+                <li><span class="text-slate-400">LinkedIn:</span><a href="http://www.linkedin.com/in/muhamedragab"
+                        target="_blank" class="text-sky-400 ml-2">linkedin.com/in/muhamedragab</a></li>
+                <li><span class="text-slate-400">GitHub:</span><a href="https://github.com/MuhamedRagabbb"
+                        target="_blank" class="text-sky-400 ml-2">github.com/MuhamedRagabbb</a></li>
+            </ul>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-400">© <span id="year"></span> Mohamed Ragab Rashad —
-            Cybersecurity Portfolio</div>
+    <footer class="py-6 border-t border-slate-800 text-center text-slate-500 text-sm">
+        © 2025 Mohamed Ragab Rashad — All Rights Reserved
     </footer>
 
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+        var typed = new Typed('#typed', {
+            strings: ["Mohamed Ragab Rashad", "Offensive Security Specialist", "Penetration Tester"],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1500,
+            loop: true
+        });
     </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
 </body>
 
 </html>
